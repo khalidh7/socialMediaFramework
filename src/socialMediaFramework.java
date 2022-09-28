@@ -1,8 +1,6 @@
-//Khalid Abouelrous
-//Grade 100/100; program works as intended. output is correct. styling and indentation is correct. comments given throughout code.
 
 import java.util.*;
-public class InstaAbouelrous{
+public class socialMediaFramework {
 }
 class User implements Comparable {
    //attributes of a user
@@ -150,18 +148,18 @@ class MyDriver {
    public static void main(String[] args){
       //creating new scanner and social media
       Scanner temp = new Scanner(System.in);
-      SocialMedia khalidInsta = new SocialMedia();
+      SocialMedia Insta = new SocialMedia();
 
       //following 5 users
-      khalidInsta.follow("Salam", "Moe", "salamRoger", true);
-      khalidInsta.follow("Amaan", "Sandy", "AmaanSandy", true);
-      khalidInsta.follow("Hamie", "Ham", "hamietheham", false);
-      khalidInsta.follow("Cristiano", "Ronaldo", "trash", false);
-      khalidInsta.follow("Leo", "Messi", "theGoat", true);
+      Insta.follow("Luis", "Suarez", "barcatoatleti", true);
+      Insta.follow("Sadio", "Mane", "goat1001", true);
+      Insta.follow("Mo", "Salah", "egyptianking", false);
+      Insta.follow("Cristiano", "Ronaldo", "theGoatnum2", false);
+      Insta.follow("Leo", "Messi", "theGoat", true);
 
       //printing out list of followers
       System.out.println("My followers:");
-      System.out.println(khalidInsta);
+      System.out.println(Insta);
 
       //searching for a user using first and last names
       System.out.println("Search for a name person");
@@ -169,7 +167,7 @@ class MyDriver {
       String first = temp.next();
       System.out.println("Enter a last name:");
       String last = temp.next();
-      khalidInsta.search(first, last);
+      Insta.search(first, last);
 
       //removing a person from the social media list
       System.out.println("From the list above please remove a follower.");
@@ -177,17 +175,17 @@ class MyDriver {
       String first1 = temp.next();
       System.out.println("Enter a last name:");
       String last1 = temp.next();
-      khalidInsta.remove(first1, last1);
+      Insta.remove(first1, last1);
 
       //printing out list of followers
       System.out.println("List of followers after removing " + first1 + " " + last1);
-      System.out.println(khalidInsta);
+      System.out.println(Insta);
 
       //following back a user
       System.out.println("Enter the first and  last name from the list above that you want to follow back: ");
       String first2 =temp.next();
       String last2 = temp.next();
-      khalidInsta.followBack(first2,last2);
+      Insta.followBack(first2,last2);
       
    }
 }
@@ -198,7 +196,7 @@ class Driver{
       
     	/*Adding followers to your list*/
       /*the boolean field indicates whether you want to follow them back*/
-      myInsta.follow("Matthew", "Philips", "MatPhil", true);
+      myInsta.follow("Neymar", "Jr.", "MatPhil", true);
       myInsta.follow("Gary", "Kane",  "GKane", false); 
       myInsta.follow("Robert", "Kenny",  "RKenny", true); 
       myInsta.follow("Bill", "Fitch", "BillF",true);
